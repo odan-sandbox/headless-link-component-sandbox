@@ -1,3 +1,3 @@
 <template>
-    <a href="/">poyo</a>
+  <a href="/">poyo</a>
 </template>

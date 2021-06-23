@@ -1,17 +1,17 @@
 <template>
-    <div href="/" class="like-link">
-        <slot />
-    </div>
+  <div href="/" class="like-link">
+    <slot />
+  </div>
 </template>
 
 <style scoped>
 .like-link {
-    color: #1867c0;
-    min-width: 64px;
-    padding: 0 16px;
+  color: var(--color-text-primary);
+  min-width: 64px;
+  padding: 0 16px;
 }
 
 .like-link:hover {
-    opacity: 0.5;
+  color: var(--color-text-link);
 }
 </style>

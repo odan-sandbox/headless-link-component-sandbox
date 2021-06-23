@@ -5,26 +5,26 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import VLink from './components/v-link.vue'
-import VHeadlessLink from './components/v-headless-link.vue'
+import { defineComponent } from "vue";
+import VLink from "./components/v-link.vue";
+import VHeadlessLink from "./components/v-headless-link.vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
     VLink,
-    VHeadlessLink
-  }
-})
+    VHeadlessLink,
+  },
+});
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+:root {
+  --color-text-link: rgb(3, 102, 214);
+  --color-text-primary: rgb(36, 41, 46);
 }
 </style>
