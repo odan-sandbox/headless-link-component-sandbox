@@ -1,7 +1,15 @@
 <template>
-  <VLink>
-    <VHeadlessLink />
-  </VLink>
+  <div class="links">
+    <VLink class="v-link" type="underlined-link">
+      <VHeadlessLink> poyo </VHeadlessLink>
+    </VLink>
+    <VLink class="v-link" type="link-primary">
+      <VHeadlessLink> poyo </VHeadlessLink>
+    </VLink>
+    <VLink class="v-link" type="button">
+      <VHeadlessLink> poyo </VHeadlessLink>
+    </VLink>
+  </div>
 </template>
 
 <script lang="ts">
@@ -26,5 +34,20 @@ export default defineComponent({
 :root {
   --color-text-link: rgb(3, 102, 214);
   --color-text-primary: rgb(36, 41, 46);
+}
+</style>
+
+<style scoped>
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-link {
+  margin: 8px 0px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 1 1 auto;
 }
 </style>
